@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libeman45-riskmatrix"
+version = "0.1.0"
+description = "对每个风险项打分并放进矩阵，给出需要优先处理的项"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "libeman45" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://libeman45.github.io"
+Repository = "https://github.com/libeman45/riskmatrix"
+Issues = "https://github.com/libeman45/riskmatrix/issues"
+
+[project.scripts]
+riskmatrix = "riskmatrix:main"
+
+[tool.setuptools]
+py-modules = ["riskmatrix"]
